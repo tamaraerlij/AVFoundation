@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		95FEB7D62459F4740073C9FF /* AVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FEB7D62459F4740073C9FF /* AVFoundationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FEB7D92459F4740073C9FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FEB7DB2459F4740073C9FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		95FEB7DD2459F4740073C9FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		95FEB7D72459F4740073C9FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95FEB7D62459F4740073C9FF /* AVFoundation.app */,
+				95FEB7D62459F4740073C9FF /* AVFoundationProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = AVFoundation;
 			productName = AVFoundation;
-			productReference = 95FEB7D62459F4740073C9FF /* AVFoundation.app */;
+			productReference = 95FEB7D62459F4740073C9FF /* AVFoundationProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TamaraErlij.AVFoundation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AVFoundationProject;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TamaraErlij.AVFoundation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AVFoundationProject;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
