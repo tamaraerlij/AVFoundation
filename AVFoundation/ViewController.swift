@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var volumeControl: UISlider!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func playAudio(_ sender: Any) {
+    }
+    
+    @IBAction func stopAudio(_ sender: Any) {
+    }
+    
+    @IBAction func adjustVolume(_ sender: Any) {
+    }
 }
 
