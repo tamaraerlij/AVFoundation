@@ -16,17 +16,32 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if let bundlePath = Bundle.main.path(forResource: "bankrobber", ofType: "mp3")  {
+            
+            let url = URL.init(fileURLWithPath: bundlePath)
+            
+            do {
+                try audioPlayer = AVAudioPlayer(contentsOf: url)
+                audioPlayer?.delegate = self
+                audioPlayer?.prepareToPlay()
+            } catch let error  as NSError {
+                print("Audio player error \(error.localizedDescription)")
+            }
+        }
+        
     }
 
 
     @IBAction func playAudio(_ sender: Any) {
+        audioPlayer?.play()
     }
     
     @IBAction func stopAudio(_ sender: Any) {
+        audioPlayer?.stop()
     }
     
     @IBAction func adjustVolume(_ sender: Any) {
+        audioPlayer?.volume = volumeControl.value
     }
 }
 
